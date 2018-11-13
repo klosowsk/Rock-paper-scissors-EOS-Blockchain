@@ -1,0 +1,212 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Fri Nov  9 13:41:15 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "acceptgame",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "challenged",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "hashed_move_str",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "close",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "host",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "creategame",
+            "base": "",
+            "fields": [
+                {
+                    "name": "challenged",
+                    "type": "name"
+                },
+                {
+                    "name": "host",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "hashed_move_str",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "game",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "challenged",
+                    "type": "name"
+                },
+                {
+                    "name": "host",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "winner",
+                    "type": "name"
+                },
+                {
+                    "name": "host_move",
+                    "type": "uint8"
+                },
+                {
+                    "name": "host_move256",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "challenged_move",
+                    "type": "uint8"
+                },
+                {
+                    "name": "challenged_move256",
+                    "type": "checksum256"
+                },
+                {
+                    "name": "can_reveal",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "move",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "by",
+                    "type": "name"
+                },
+                {
+                    "name": "hashed_move_str",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "ontransfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "reveal",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "seed_host",
+                    "type": "string"
+                },
+                {
+                    "name": "seed_challenged",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "acceptgame",
+            "type": "acceptgame",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "close",
+            "type": "close",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "creategame",
+            "type": "creategame",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "move",
+            "type": "move",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "ontransfer",
+            "type": "ontransfer",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "reveal",
+            "type": "reveal",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "games",
+            "type": "game",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
