@@ -38,7 +38,7 @@ using namespace eosio;
 *        - By now the game accepts only one round
 *        - Allow best of three and other modalities
 *        - Write ricardian contracts
-
+*/
 
 
 /*
@@ -501,6 +501,7 @@ void jopow_on_eos::ontransfer(  const name&            from,
         } else {
             // TODO verify transfer with empty memo, just a transfer, memo null
             //eosio_assert(false, "invalid memo");
+        }
     }
 }
 
